@@ -11,6 +11,7 @@ public:
     ~MyThread();
     void start(int count);
     void stop();
+    void waitUntilFinished();
 private:
     void threadFunction(int count);
     std::thread thread_;
